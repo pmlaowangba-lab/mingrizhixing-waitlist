@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>明日之星 · 加入等待名单</title>
+<meta name="description" content="明日之星自媒体选题工作台，由产品经理老王霸打造。当前处于测试阶段，非开源商业项目。留下邮箱，正式上线后第一时间邮件通知。">
+<meta property="og:title" content="明日之星 · 加入等待名单">
+<meta property="og:description" content="为创作者打造的新一代选题工作台。测试阶段 · 非开源商业项目，留下邮箱上线通知。">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="./waitlist.css">
+</head>
+<body>
+<div class="wl-page" id="wlStage">
+ <div class="wl-aurora" aria-hidden="true"></div>
+
+ <header class="wl-header">
+  <div class="wl-container wl-nav">
+   <a href="#top" class="wl-brand" aria-label="明日之星">
+    <span class="wl-mark" aria-hidden="true">W.</span>
+    <span class="wl-brand-name">明日之星</span>
+   </a>
+   <a href="#maker" class="wl-nav-maker">by 产品经理老王霸</a>
+  </div>
+ </header>
+
+ <main id="top">
+  <!-- Full-bleed Airy Hero -->
+  <section class="wl-hero">
+   <div class="wl-container wl-hero-inner">
+    <p class="wl-status">
+     <span class="wl-status-dot" aria-hidden="true"></span>
+     <span>测试阶段 · 非开源商业项目</span>
+    </p>
+
+    <h1 class="wl-title">
+     为创作者打造的<br>新一代选题工作台
+    </h1>
+
+    <p class="wl-subtitle">
+     从爆款发现、评论洞察到图文制作与多平台发布，一站闭环。
+    </p>
+
+    <div class="wl-capture" id="join">
+     <div id="wlFormView">
+      <form id="wlForm" class="wl-form" novalidate>
+       <label class="wl-sr-only" for="wlEmail">输入邮箱加入等待名单</label>
+       <div class="wl-input-shell">
+        <input
+         id="wlEmail"
+         name="email"
+         type="email"
+         inputmode="email"
+         autocomplete="email"
+         spellcheck="false"
+         maxlength="254"
+         placeholder="输入你的邮箱地址"
+         required
+         aria-describedby="wlFeedback wlHint"
+        >
+        <button type="submit" id="wlSubmit" class="wl-submit">
+         <span class="wl-submit-label">加入等待名单</span>
+        </button>
+       </div>
+       <div id="wlFeedback" class="wl-feedback" role="alert" aria-live="polite" hidden></div>
+      </form>
+      <p id="wlHint" class="wl-hint">目前为封闭测试阶段，留下邮箱，正式上线后第一时间邮件通知。</p>
+     </div>
+
+     <div id="wlSuccessView" class="wl-success" hidden>
+      <div class="wl-success-main">
+       <span class="wl-success-dot" aria-hidden="true"></span>
+       <div>
+        <strong id="wlSuccessTitle">已加入等待名单</strong>
+        <p id="wlSuccessDesc">正式上线后将通知 <code id="wlSuccessEmail"></code></p>
+       </div>
+      </div>
+      <div class="wl-success-actions">
+       <button type="button" id="wlCopyBtn" class="wl-action-btn">复制链接</button>
+       <button type="button" id="wlResetBtn" class="wl-action-link">换个邮箱</button>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+
+  <!-- Minimal Editorial Hairline Capabilities Grid -->
+  <section class="wl-features" id="features" aria-labelledby="featuresHeading">
+   <div class="wl-container">
+    <div class="wl-features-head">
+     <h2 id="featuresHeading">核心能力</h2>
+     <span>发现 · 洞察 · 创作 · 分发</span>
+    </div>
+
+    <div class="wl-grid">
+     <article class="wl-cell">
+      <span class="wl-num">01</span>
+      <h3>超爆选题发现</h3>
+      <p>聚合小红书、抖音、YouTube 与 GitHub 热门选题，实时捕捉高潜内容。</p>
+     </article>
+
+     <article class="wl-cell">
+      <span class="wl-num">02</span>
+      <h3>AI 评论深度分析</h3>
+      <p>拆解真实爆款评论区的高频痛点与提问，提炼下一期切入角度。</p>
+     </article>
+
+     <article class="wl-cell">
+      <span class="wl-num">03</span>
+      <h3>对标博主追踪</h3>
+      <p>建立专属对标账号池，持续追踪同赛道创作者的新作与爆款规律。</p>
+     </article>
+
+     <article class="wl-cell">
+      <span class="wl-num">04</span>
+      <h3>我的选题库</h3>
+      <p>一键入选、分组归档与记录角度，沉淀可复用的长期内容资产。</p>
+     </article>
+
+     <article class="wl-cell">
+      <span class="wl-num">05</span>
+      <h3>可视化贴图制作</h3>
+      <p>内置小绿书与知识卡片编辑器，多套模板即刻排版、跨设备续编。</p>
+     </article>
+
+     <article class="wl-cell">
+      <span class="wl-num">06</span>
+      <h3>多平台发布与数据</h3>
+      <p>高效串联多平台视频发布流，一处掌握全网账号粉丝与增长趋势。</p>
+     </article>
+    </div>
+   </div>
+  </section>
+
+  <!-- Maker / Author Section (Text-first editorial, no raw screenshot) -->
+  <section class="wl-maker" id="maker" aria-labelledby="makerHeading">
+   <div class="wl-container">
+    <div class="wl-maker-inner">
+     <div class="wl-maker-bio">
+      <span class="wl-maker-eyebrow">CREATED BY</span>
+      <div class="wl-maker-title-row">
+       <h2 id="makerHeading">产品经理老王霸</h2>
+       <a href="https://x.com/laowangbabababa" target="_blank" rel="noopener noreferrer" class="wl-maker-handle">@laowangbabababa</a>
+      </div>
+      <p class="wl-maker-cred">前 Top2 大厂 AI 产品经理 · 《电商产品经理》作者 · 独立开发者</p>
+      <p class="wl-maker-focus">长期分享 AI 出海、AI 编程实战与工具评测，把自己的日常自媒体工作流做成产品。</p>
+     </div>
+
+     <div class="wl-maker-links" aria-label="作者联系方式">
+      <a href="https://x.com/laowangbabababa" target="_blank" rel="noopener noreferrer" class="wl-contact-row">
+       <span class="wl-contact-key">X / Twitter</span>
+       <span class="wl-contact-val">@laowangbabababa ↗</span>
+      </a>
+      <button type="button" class="wl-contact-row" data-copy="产品经理老王霸">
+       <span class="wl-contact-key">公众号</span>
+       <span class="wl-contact-val"><em>产品经理老王霸</em><small>复制</small></span>
+      </button>
+      <button type="button" class="wl-contact-row" data-copy="pmlaowangba">
+       <span class="wl-contact-key">微信</span>
+       <span class="wl-contact-val"><code>pmlaowangba</code><small>复制</small></span>
+      </button>
+     </div>
+    </div>
+   </div>
+  </section>
+ </main>
+
+ <footer class="wl-footer">
+  <div class="wl-container wl-footer-inner">
+   <span>© 明日之星 · 非开源商业项目 · 当前处于测试阶段</span>
+   <span>由 产品经理老王霸 独立研发</span>
+  </div>
+ </footer>
+</div>
+<script type="module" src="./waitlist.mjs"></script>
+</body>
+</html>
